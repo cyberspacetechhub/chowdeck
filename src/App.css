@@ -1,4 +1,28 @@
-#root {
+.categories{
+  scrollbar-width: none;
+}
+.store-container{
+  /* margin-top: 8%; */
+}
+/* @media (max-width: 786px) {
+  .store-container{
+    margin-top: 45%;
+  }
+} */
+
+.outlet{
+  margin-top: 8%;
+}
+
+.pr-card{
+  scrollbar-width: none;
+}
+
+
+
+
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +63,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
