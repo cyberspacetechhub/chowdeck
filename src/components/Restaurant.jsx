@@ -12,7 +12,7 @@ const Restaurant = () => {
             <div className=' flex justify-center items-center w-full'>
                 <h1 className=' text-center text-4xl text-white font-semibold w-4/5'>Order your delicious meals from restaurants in Lekki Phase 1</h1>
             </div>
-            <h2 className=' text-center'>Choose from the top categories</h2>
+            <h2 className=' text-center text-gray-200 font-normal text-2xl'>Choose from the top categories</h2>
             <div className=' flex justify-center gap-4 items-center flex-wrap'>
                 <h2 className=' px-3 py-1 bg-gray-300 rounded-full text-sm text-cyan-800'>All</h2>
                 <h2 className=' px-3 py-1 bg-gray-300 rounded-full text-sm text-cyan-800'>Pizza</h2>
