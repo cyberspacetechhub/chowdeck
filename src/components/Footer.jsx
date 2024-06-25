@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import MedPlus2 from '../assets/imgs/med-plus.png'
 const Footer = () => {
   return (
-    <div>
+    <div className=' relative z-40'>
       <hr className=' my-6 w-full' />
       <footer>
         <div>

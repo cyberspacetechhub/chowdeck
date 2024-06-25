@@ -1,13 +1,32 @@
-import { Add, BookmarkBorderOutlined, DeleteOutlined, InfoOutlined, Remove, StarOutlined, WatchLaterOutlined, WestRounded } from '@mui/icons-material'
-import React from 'react'
+import { Add, BookmarkBorderOutlined, Clear, DeleteOutlined, ExpandLessRounded, ExpandMoreRounded, InfoOutlined, Remove, StarOutlined, WatchLaterOutlined, WestRounded } from '@mui/icons-material'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Rice1 from '../assets/imgs/rice.jpeg'
 import Pkgbag from '../assets/imgs/brown-bag.jpg'
 import SuyaSpice from '../assets/imgs/suya-spice.jpeg'
 
 const ProductDetails = () => {
+    const [select, setSelect] = useState(false)
+    const [isSpice, setIsSpice] = useState(false)
+    const [isOrder, setIsOrder] = useState(false)
+
+    const toggleSelect = () => {
+        setSelect(!select)
+    }
+    const toggleSpiceDiv = () => {
+        setIsSpice(!isSpice)
+    }
+    const handleOrder = () => {
+        setIsOrder(!isOrder)
+    }
+    const handleCancel = () => {
+        if (setIsOrder !== isOrder) {
+            setIsOrder(false)
+        }
+    }
   return (
-    <div className=' bg-white max-lg:mt-36'>
+    <div className=' w-full'>
+    <div className=' bg-white max-lg:mt-36 relative'>
       <div className=' flex w-full justify-center gap'>
         <div className='pr-card w-2/5 h-lvh overflow-auto border-r border-gray-400 p-4'>
             <div>
@@ -52,8 +71,9 @@ const ProductDetails = () => {
                 </div>
             </div>
             <div className=' mt-8'>
+                <Link onClick={handleOrder}>
                 <div className=' flex justify-between items-center border border-gray-300 rounded p-4 w-3/4'>
-                    <div className=' flex flex-col'>
+                     <div className=' flex flex-col'>
                         <h3 className=' text-base font-semibold'>Suya Spice</h3>
                         <span className=' text-sm text-gray-400'>Suya spice</span>
                         <span className=' text-cyan-500'>&#8358;15,000</span>
@@ -62,6 +82,7 @@ const ProductDetails = () => {
                         <img src={SuyaSpice} alt="" className=' w-full h-full' />
                     </div>
                 </div>
+                </Link>
             </div>
         </div>
         <div className=' w-2/6 stick -top-16 h-lvh p-4 overflow-auto'>
@@ -203,7 +224,81 @@ const ProductDetails = () => {
             </div>
         </div>
       </div>
+      
     </div>
+    {
+        isOrder && (
+            <div className=' absolute z-40 bg-black bg-opacity-50 w-full top-0 h-lvh bg-cover overflow-y-auto overflow-x-hidden flex justify-center pb-8'>
+    <div className=' relative bg-white w-1/2 z-10 p-4 rounded-2xl h-lvh mt-16'>
+    <div className=' absolute right-5 top-5'>
+        <span onClick={handleCancel} className=' bg-white border border-gray-200 rounded-full flex justify-center items-center p-3 text-gray-700 hover:text-red-600 cursor-pointer'><Clear fontSize='' /></span>
+    </div>
+        <div className=' w-full h-full'>
+            <div className=' w-full h-72'>
+                <img src={Rice1} alt="" className=' w-full h-full' />
+            </div>
+            <div className=' flex justify-between py-3'>
+                <h2 className=' flex flex-col'>
+                    <span className=' text-xl font-normal text-cyan-950'>Rice and chicken</span>
+                    <span className=' text-xl text-gray-500 font-light'>Rice, Stew and Chicken</span>
+                </h2>
+                <span className=' text-cyan-600 font-medium'>&#8358;6,500</span>
+            </div>
+            <div>
+                <Link className=''>
+                   <div onClick={toggleSpiceDiv} className=' flex justify-between items-center bg-gray-200 p-2'>
+                        <span className=' flex gap-4 items-center'>
+                            <span className=' font-medium text-base text-cyan-900'>Spice</span>
+                            <span className=' text-red-600 border border-red-300 rounded-full px-2 text-xs'>required</span>
+                        </span>
+                        <span className=' border-2 rounded-full border-cyan-900 h-4 w-4 flex justify-center items-center'>
+                            {
+                                !isSpice ?
+                                    <span onClick={toggleSpiceDiv} className=' flex items-center'><ExpandMoreRounded fontSize='' /></span>:
+                                    <span onClick={toggleSpiceDiv} className=' flex items-center'><ExpandLessRounded fontSize='' />
+                                    {isSpice}
+                                    </span>
+                            }
+                        </span>
+                   </div>
+                    {
+                        isSpice && (
+                            <div className=''>
+                                <span className=' uppercase text-gray-500 text-xs py-2'>Select1</span>
+                                <div className=' flex justify-between py-2 pr-2'>
+                                    <span className=' flex flex-col'>
+                                        <span className=' text-base font-normal text-gray-600'>Very Spicy</span>
+                                        <span className=' text-gray-500'>+&#8358;200</span>
+                                    </span>
+                                    <div onClick={toggleSelect} className=' flex justify-center items-center border border-cyan-500 hover:border-cyan-600 w-5 h-5 rounded-full cursor-pointer'>
+                                        {
+                                            select && (
+                                                <div className=' bg-cyan-700 w-3 h-3 rounded-full'></div>
+                                            )
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    }
+                </Link>
+                    <div className=' flex gap-4 w-full pt-2'>
+                        <span className='rounded bg-white border px-6 py-3 flex gap-4'>
+                            <button className=' text-cyan-700'> <Remove /></button>
+                            <span className=' text-lg text-cyan-700'>1</span>
+                            <button className=' text-cyan-700'><Add /></button>
+                        </span>
+                        <button className=' bg-cyan-600 text-2xl px-6'>
+                            Add <span>1</span> item to my order
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        )
+    }
+</div>
   )
 }
 

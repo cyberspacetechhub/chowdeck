@@ -22,15 +22,15 @@ const Store = () => {
             </div>
             <div className=' flex flex-col items-center bg-teal-100 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
-                <p>Restaurants</p>
+                <p>Supermarkets</p>
             </div>
             <div className=' flex flex-col items-center bg-violet-100 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
-                <p>Restaurants</p>
+                <p>Pharmacy</p>
             </div>
             <div className=' flex flex-col items-center bg-indigo-100 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
-                <p>Restaurants</p>
+                <p>Local Markets</p>
             </div>
             <div className=' flex flex-col items-center bg-cyan-100 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
@@ -38,7 +38,7 @@ const Store = () => {
             </div>
             <div className=' flex flex-col items-center bg-orange-100 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
-                <p>Restaurants</p>
+                <p>African Meals</p>
             </div>
         </div>
 

@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const Home = () => {
   return (
-    <div className=' px-4 font-sans'>
+    <div className=' px- font-sans'>
       <Header />
       <div className='outlet '>
         <Outlet />
