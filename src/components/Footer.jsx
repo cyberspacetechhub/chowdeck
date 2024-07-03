@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 import MedPlus2 from '../assets/imgs/med-plus.png'
 const Footer = () => {
   return (
-    <div className=' relative z-40'>
+    <div className=' relative z-0'>
       <hr className=' my-6 w-full' />
       <footer>
+        {/* <div className=' bg-black bg-opacity-20 h-full w-full absolute'></div> */}
         <div>
             <div className=' flex justify-center gap-8 flex-wrap '>
                 <div className=''>
