@@ -1,8 +1,13 @@
-import { Home, HomeOutlined, Segment, ShoppingCartOutlined } from '@mui/icons-material'
-import React from 'react'
+import { Clear, Home, HomeOutlined, Segment, ShoppingBag, ShoppingCart, ShoppingCartOutlined } from '@mui/icons-material'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Nav = () => {
+    const [showDiv, setShowDiv] = useState(false)
+
+    const handleShowDiv = () => {
+        setShowDiv(!showDiv)
+    }
   return (
      <header className=' fixed bg-inherit z-40 flex justify-between items-center px-4 w-full top-0 py-4'>
         <div className=''>
@@ -26,10 +31,57 @@ const Nav = () => {
             <Link to='/store' className=' bg-primary text-secondary flex justify-center items-center p-3 rounded-full shadow-lg'>
                 <ShoppingCartOutlined />
             </Link>
-            <button className=' max-2xl:hidden flex justify-center items-center bg-primary text-secondary rounded-full p-2 max-lg:block shadow-lg'>
+            <button onClick={handleShowDiv} className=' max-2xl:hidden flex justify-center items-center bg-primary text-secondary rounded-full p-2 max-lg:block shadow-lg'>
                 <Segment fontSize='large' />
             </button>
         </div>
+        {
+             showDiv && (
+                <nav className=' absolute top-0 w-full left-0 bg-accent h-screen'>
+                    <div className='fixed bg-accent w-full z-40 flex justify-end items-cente px-4 gap-4 border-b border-grayTxt'>
+                        <div className=' flex items-center gap-4 py-6'>
+                            <button className=''>
+                                <Link className='text-secondary bg-primary flex items-center rounded-full p-3'><ShoppingCart /></Link>
+                            </button>
+                            <button onClick={handleShowDiv} className=''>
+                                <Link className=' text-primary '><Clear fontSize='large' /></Link>
+                            </button>
+                        </div>
+                    </div>
+                    <div className='menu pt-24 overflow-y-auto h-screen'>
+                        <ul className='flex items-center flex-col list-none w-full'>
+                            <li className=' w-full border-y border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                            <li className=' w-full border-b border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                            <li className=' w-full border-b border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                            <li className=' w-full border-b border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                            <li className=' w-full border-b border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                            <li className=' w-full border-b border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                            <li className=' w-full border-b border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                            <li className=' w-full border-b border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                            <li className=' w-full border-b border-grayTxt hover:bg-lightteal hover:bg-opacity-20'>
+                                <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                )
+            }
      </header>
   )
 }

@@ -66,8 +66,8 @@ const Content = () => {
             <p className=" text-8xl max-md:text-4xl font-bold">{texts[currentIndex]}</p>
         </div>
         <button className=' absolute mt-10 flex gap-8'>
-            <Link className=' px-16 py-4 max-md:px-8 rounded-lg bg-background text-primary font-semibold text-2xl'>Book Now</Link>
-            <Link className=' px-16 py-4 max-md:px-8 rounded-lg bg-background text-primary font-semibold text-2xl'>Order Now</Link>
+            <Link className=' px-16 py-4 max-md:px-8 max-sm:px-4 rounded-lg bg-background text-primary font-semibold text-2xl'>Book Now</Link>
+            <Link className=' px-16 py-4 max-md:px-8 max-sm:px-4 rounded-lg bg-background text-primary font-semibold text-2xl'>Order Now</Link>
         </button>
         </div>
         <div>
@@ -108,7 +108,7 @@ const Content = () => {
         </main>
         <div className=' my-8'>
             <div className=' py-8 max-lg:py-4'>
-                <h1 className=' flex justify-center items-center text-6xl max-lg:text-3xl max-lg:font-normal font-medium text-gray text-center'>
+                <h1 className=' flex justify-center items-center text-6xl max-lg:text-3xl max-md:text-2xl max-lg:font-normal font-medium text-gray text-center'>
                     Join our growing network
                     <span className=' pt-5 max-lg:pt-2'><svg className=' max-lg:h-8 max-lg:w-8' xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 0 24 24" width="48px" fill="#B7B7B7"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M11 5v11.17l-4.88-4.88c-.39-.39-1.03-.39-1.42 0-.39.39-.39 1.02 0 1.41l6.59 6.59c.39.39 1.02.39 1.41 0l6.59-6.59c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L13 16.17V5c0-.55-.45-1-1-1s-1 .45-1 1z"/></svg></span>
                 </h1>
@@ -181,8 +181,8 @@ const Content = () => {
             <div className=' relative z-10 bg-background h-lvh max-md:h-80 px-8'>
             </div>
             <div className='bg-background pb-16 pt-4 px-4 relative h-auto'>
-                <div className=' flex items-center max-lg:flex-col max-lg:items-start max-lg:px-12 gap-8 w-full'>
-                    <h1 className=' w-1/2 text-7xl max-lg:text-3xl font-bold text-primary'>Chowdeck got you covered</h1>
+                <div className=' flex items-center max-lg:flex-col max-lg:items-start max-lg:px-12 max-md:px-6 gap-8 w-full'>
+                    <h1 className=' w-1/2 max-lg:w-full text-7xl max-lg:text-3xl font-bold text-primary'>Chowdeck got you covered</h1>
                     <p className=' w-1/2 max-lg:w-full text-3xl max-lg:text-base font-normal text-primary'>
                         Are you Hungry? Not fit to cook? Have visitors, or u wan just chop life? Download chowdeck lets deliver happiness to your doorstep in minutes
                     </p>
@@ -335,11 +335,11 @@ const Content = () => {
                                             <div className=' border-4 rounded-full p-1 bg-background'></div>
                                             <span className=' font-semibold'>LGHDEN</span>
                                         </p>
-                                        <p className=' text-xl font-normal pr-40 max-md:pr-10'>Get <span className=' font-medium text-secondary'>&#8358;300 off</span> your first order when you use this promo code</p>
+                                        <p className=' text-xl max-md:text-sm font-normal pr-40 max-md:pr-10'>Get <span className=' font-medium text-secondary'>&#8358;300 off</span> your first order when you use this promo code</p>
                                     </div>
                                 </div>
                             </div>
-                            <div className='h-96 max-md:h-48 p-0 m-0 absolute right-3 bottom-2'>
+                            <div className='h-96 max-md:h-48 max-sm:h-32 p-0 m-0 absolute right-3 bottom-2'>
                                 <img src={Drink} alt="" className='h-full' />
                             </div>
                         </div>
