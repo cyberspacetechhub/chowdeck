@@ -65,10 +65,10 @@ const Content = () => {
         <div className='absolute top-28 '>
             <p className=" text-8xl max-md:text-4xl font-bold">{texts[currentIndex]}</p>
         </div>
-        <button className=' absolute mt-10 flex gap-8'>
+        <div className=' absolute mt-10 flex gap-8'>
             <Link className=' px-16 py-4 max-md:px-8 max-sm:px-4 rounded-lg bg-background text-primary font-semibold text-2xl'>Book Now</Link>
             <Link className=' px-16 py-4 max-md:px-8 max-sm:px-4 rounded-lg bg-background text-primary font-semibold text-2xl'>Order Now</Link>
-        </button>
+        </div>
         </div>
         <div>
         </div>
