@@ -10,33 +10,33 @@ const Store = () => {
             <h1 className=' text-2xl font-normal'>Explore Categories</h1>
         </div>
         <div className='categories flex justify-center max-lg:justify-start items-center gap-8 overflow-auto w-full'>
-            <div className=' flex flex-col items-center bg-cyan-100 py-7 px-4 rounded-lg'>
+            <div className=' flex flex-col items-center bg-lightcyan bg-opacity-10 py-7 px-4 rounded-lg'>
             <Link>
                 <span><StoreRounded fontSize='large' /></span>
                 <p>Restaurants</p>
             </Link>
             </div>
-            <div className=' flex flex-col items-center bg-orange-100 py-7 px-4 rounded-lg'>
+            <div className=' flex flex-col items-center bg-lightorange bg-opacity-10 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
                 <p>Restaurants</p>
             </div>
-            <div className=' flex flex-col items-center bg-teal-100 py-7 px-4 rounded-lg'>
+            <div className=' flex flex-col items-center bg-lightteal bg-opacity-10 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
                 <p>Supermarkets</p>
             </div>
-            <div className=' flex flex-col items-center bg-violet-100 py-7 px-4 rounded-lg'>
+            <div className=' flex flex-col items-center bg-lightviolet bg-opacity-10 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
                 <p>Pharmacy</p>
             </div>
-            <div className=' flex flex-col items-center bg-indigo-100 py-7 px-4 rounded-lg'>
+            <div className=' flex flex-col items-center bg-lightindigo bg-opacity-10 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
                 <p>Local Markets</p>
             </div>
-            <div className=' flex flex-col items-center bg-cyan-100 py-7 px-4 rounded-lg'>
+            <div className=' flex flex-col items-center bg-lightcyan bg-opacity-10 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
                 <p>Restaurants</p>
             </div>
-            <div className=' flex flex-col items-center bg-orange-100 py-7 px-4 rounded-lg'>
+            <div className=' flex flex-col items-center bg-lightorange bg-opacity-10 py-7 px-4 rounded-lg'>
                 <span><StoreRounded fontSize='large' /></span>
                 <p>African Meals</p>
             </div>
