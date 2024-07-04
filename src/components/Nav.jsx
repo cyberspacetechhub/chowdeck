@@ -31,7 +31,7 @@ const Nav = () => {
             <Link to='/store' className=' bg-primary text-secondary flex justify-center items-center p-3 rounded-full shadow-lg'>
                 <ShoppingCartOutlined />
             </Link>
-            <button onClick={handleShowDiv} className=' max-2xl:hidden flex justify-center items-center bg-primary text-secondary rounded-full p-2 max-lg:block shadow-lg'>
+            <button onClick={handleShowDiv} className=' max-2xl:hidden flex justify-center items-center bg-secondary text-primary rounded-full p-2 max-lg:block shadow-lg'>
                 <Segment fontSize='large' />
             </button>
         </div>
@@ -78,6 +78,12 @@ const Nav = () => {
                                 <Link className=' py-6 px-4 flex w-full text-2xl text-primary items-center gap-3'><ShoppingBag /> <span>Company</span></Link>
                             </li>
                         </ul>
+                        <div className=' w-full py-8'>
+                            <p className=' text-center flex items-center justify-center text-grayTxt'>
+                                <span>&copy;</span>
+                                All right reserved. 2024 Choplyf Technology
+                            </p>
+                        </div>
                     </div>
                 </nav>
                 )
