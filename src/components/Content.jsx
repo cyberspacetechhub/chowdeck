@@ -59,7 +59,7 @@ const Content = () => {
   return (
     <div className=' relative'>
       <div className="flex h-full justify-center items-center pt-0 mt-0 relative">
-        <div className='relative w-full h-screen max-md:h-96'>
+        <div className='relative w-full h-screen max-lg:h-96'>
             <img src={Loader} alt="" className=' w-full h-full' />
         </div>
         <div className='absolute top-28 '>
@@ -332,7 +332,7 @@ const Content = () => {
                                     <img src={Promocode} alt=""  />
                                     <div>
                                         <p className=' border w-32 flex items-center py-3 gap-2 px-3 rounded-lg bg-secondary'>
-                                            <div className=' border-4 rounded-full p-1 bg-background'></div>
+                                            <span className=' border-4 rounded-full p-1 bg-background'></span>
                                             <span className=' font-semibold'>LGHDEN</span>
                                         </p>
                                         <p className=' text-xl max-md:text-sm font-normal pr-40 max-md:pr-10'>Get <span className=' font-medium text-secondary'>&#8358;300 off</span> your first order when you use this promo code</p>

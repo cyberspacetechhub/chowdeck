@@ -25,6 +25,7 @@ export default {
       lightorange: "#FFA07A",
       lightviolet: "#EE00FF",
       lightteal: "#00FF80", 
+      gold: "#633112", 
     },
     extend: {},
   },

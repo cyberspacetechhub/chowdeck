@@ -19,6 +19,13 @@
   scrollbar-width: none;
 }
 
+.sidenav{
+  width: 28%;
+}
+.right-section{
+  width: 70%;
+}
+
 
 
 

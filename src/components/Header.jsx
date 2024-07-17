@@ -25,7 +25,7 @@ const Header = () => {
                 <Link className=' bg-background rounded-full flex justify-center items-center h-10 w-10'>
                     <div className=' text-primary'><ShoppingCartOutlined /></div>
                 </Link>
-                <Link className=' bg-background rounded-full flex justify-center items-center h-10 w-10'>
+                <Link to='/store/myorder' className=' bg-background rounded-full flex justify-center items-center h-10 w-10'>
                     <span className=' text-primary'><PersonOutlined /></span>
                 </Link>
             </div>

@@ -7,6 +7,7 @@ import ProductDetails from './components/ProductDetails'
 import Restaurant from './components/Restaurant'
 import Article from './components/Article'
 import Content from './components/Content'
+import MyOrder from './components/MyOrder'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/store/product_details/' element={<ProductDetails />} />
           <Route path='/store/restaurant' element={<Restaurant />} />
         </Route>
+          <Route path='/store/myorder' element={<MyOrder />} />
       </Routes>
     </div>
     </>
