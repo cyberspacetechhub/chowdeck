@@ -132,8 +132,8 @@ const MyOrder = () => {
                     <span className=' absolute left-0 px-1 pt-2 text-primary'><SearchOutlined /></span>
                     <span className='bg-lightgreen absolute right-0 h-auto px-2 py-2 text-primary font-medium rounded-r-md'>Search</span>
                 </div>
-                <div className=' flex items-center gap-6 max-lg:w-full'>
-                    <div className=' max-lg:w-1/2'>
+                <div className=' flex items-center max-sm:flex-col gap-6 max-lg:w-full'>
+                    <div className=' max-lg:w-1/2 max-sm:w-full block'>
                         <Link className=' flex items-center max-lg:justify-center gap-2 bg-gray bg-opacity-20 border border-gray border-opacity-15 rounded-md px-2 py-2'>
                             <span className=' text-primary font-medium flex gap-2'>
                                 <FilterAltOutlined />
@@ -148,7 +148,7 @@ const MyOrder = () => {
                             </span>
                         </Link>
                     </div>
-                    <div className=' max-lg:w-1/2'>
+                    <div className=' max-lg:w-1/2 max-sm:w-full block'>
                         <Link className=' flex items-center max-lg:justify-center gap-2 bg-gray bg-opacity-20 border border-gray border-opacity-15 rounded-md py-2 px-2'>
                             <span className=' text-primary font-medium '>Last 7 days</span>
                             <span className='text-primary'>
@@ -163,7 +163,7 @@ const MyOrder = () => {
             </div>
             <div className=' bg-gray bg-opacity-20 text-primary border border-gray border-opacity-15 rounded-md mt-5 p-4'>
                 <div className=''>
-                    <div className=' flex justify-between items-center pb-4'>
+                    <div className=' flex justify-between flex-wrap max-sm:gap-2 items-center pb-4'>
                         <div className=' flex gap-2 items-center'>
                             <span className=' text-xl font-light text-gray text-opacity-60'>Order ID:
                                 <span className=' text-primary text-lg font-normal'> #BCUBYBCS</span>
@@ -177,15 +177,15 @@ const MyOrder = () => {
                             </button>
                         </div>
                     </div>
-                    <div className=' flex items-center gap-4 mb-5'>
-                        <button className='bg-red p-1 rounded-md'>
-                            <Link className=' font-normal'>
+                    <div className=' flex items-center max-sm:flex-col gap-4 mb-5'>
+                        <button className='bg-red p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal block'>
                                 <span>Cancel order</span>
                             </Link>
                         </button>
-                        <button className='border border-gray border-opacity-15 p-1 rounded-md'>
-                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary'>
-                                <span className=' flex items-center gap-1'>
+                        <button className='border border-gray border-opacity-15 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary block'>
+                                <span className=' flex items-center max-sm:justify-center gap-1'>
                                     <span className=''>
                                     <Receipt fontSize='' />
                                     </span>
@@ -193,8 +193,8 @@ const MyOrder = () => {
                                 </span>
                             </Link>
                         </button>
-                        <button className='border border-gray border-opacity-15 p-1 rounded-md'>
-                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary'>
+                        <button className='border border-gray border-opacity-15 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary block'>
                                 <span>Order details</span>
                             </Link>
                         </button>
@@ -202,16 +202,16 @@ const MyOrder = () => {
                 </div>
                 <hr className=' border-gray border-opacity-30' />
                 <div className=' mt-5'>
-                    <div className=' flex justify-between items-center gap-4 pb-5'>
-                        <span className=' inline-flex gap-2 items-center font-normal text-primary'>
+                    <div className=' flex justify-between items-center max-sm:flex-col max-sm:items-start gap-4 pb-5'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-primary text-lg max-md:text-sm max-sm:text-xl'>
                             Order date:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'>16 july 2024</span>
+                            <span className=' text-gray text-opacity-60 font-normal'>16 july 2024</span>
                         </span>
-                        <span className=' inline-flex gap-2 items-center font-normal'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Email:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'> yourmail@gmsil.com</span>
+                            <span className=' text-gray text-opacity-60 font-normal'> yourmail@gmsil.com</span>
                         </span>
-                        <span className='inline-flex items-center gap-2 font-normal'>
+                        <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
                             <span className=' text-gray text-opacity-60 font-normal'>
                                  <CreditCard />
@@ -227,7 +227,7 @@ const MyOrder = () => {
             </div>
             <div className=' bg-gray bg-opacity-20 text-primary border border-gray border-opacity-15 rounded-md mt-5 p-4'>
                 <div className=''>
-                    <div className=' flex justify-between items-center pb-4'>
+                    <div className=' flex justify-between flex-wrap max-sm:gap-2 items-center pb-4'>
                         <div className=' flex gap-2 items-center'>
                             <span className=' text-xl font-light text-gray text-opacity-60'>Order ID:
                                 <span className=' text-primary text-lg font-normal'> #BCUBYBCS</span>
@@ -244,15 +244,15 @@ const MyOrder = () => {
                             </button>
                         </div>
                     </div>
-                    <div className=' flex items-center gap-4 mb-5'>
-                        <button className='bg-red p-1 rounded-md'>
-                            <Link className=' font-normal'>
+                    <div className=' flex items-center max-sm:flex-col gap-4 mb-5'>
+                        <button className='bg-red p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal block'>
                                 <span>Cancel order</span>
                             </Link>
                         </button>
-                        <button className='border border-gray border-opacity-15 p-1 rounded-md'>
-                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary'>
-                                <span className=' flex items-center gap-1'>
+                        <button className='border border-gray border-opacity-15 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary block'>
+                                <span className=' flex items-center justify-center gap-1'>
                                     <span className=''>
                                     <Receipt fontSize='' />
                                     </span>
@@ -260,8 +260,8 @@ const MyOrder = () => {
                                 </span>
                             </Link>
                         </button>
-                        <button className='border border-gray border-opacity-15 p-1 rounded-md'>
-                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary'>
+                        <button className='border border-gray border-opacity-15 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary block'>
                                 <span>Order details</span>
                             </Link>
                         </button>
@@ -269,16 +269,16 @@ const MyOrder = () => {
                 </div>
                 <hr className=' border-gray border-opacity-30' />
                 <div className=' mt-5'>
-                    <div className=' flex justify-between items-center gap-4 pb-5'>
-                        <span className=' inline-flex gap-2 items-center font-normal text-primary'>
+                    <div className=' flex justify-between items-center max-sm:flex-col max-sm:items-start gap-4 pb-5'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-primary text-lg max-md:text-sm max-sm:text-xl'>
                             Order date:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'>16 july 2024</span>
+                            <span className=' text-gray text-opacity-60 font-normal'>16 july 2024</span>
                         </span>
-                        <span className=' inline-flex gap-2 items-center font-normal'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Email:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'> yourmail@gmsil.com</span>
+                            <span className=' text-gray text-opacity-60 font-normal'> yourmail@gmsil.com</span>
                         </span>
-                        <span className='inline-flex items-center gap-2 font-normal'>
+                        <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
                             <span className=' text-gray text-opacity-60 font-normal'>
                                  <CreditCard />
@@ -294,7 +294,7 @@ const MyOrder = () => {
             </div>
             <div className=' bg-gray bg-opacity-20 text-primary border border-gray border-opacity-15 rounded-md mt-5 p-4'>
                 <div className=''>
-                    <div className=' flex justify-between items-center pb-4'>
+                    <div className=' flex justify-between items-center flex-wrap max-sm:gap-2 pb-4'>
                         <div className=' flex gap-2 items-center'>
                             <span className=' text-xl font-light text-gray text-opacity-60'>Order ID:
                                 <span className=' text-primary text-lg font-normal'> #BCUBYBCS</span>
@@ -311,17 +311,17 @@ const MyOrder = () => {
                             </button>
                         </div>
                     </div>
-                    <div className=' flex items-center gap-4 mb-5'>
-                        <button className='bg-lightteal bg-opacity-40 p-1 rounded-md'>
-                            <Link className=' font-normal'>
-                                <span>
+                    <div className=' flex items-center max-sm:flex-col gap-4 mb-5'>
+                        <button className='bg-lightteal bg-opacity-40 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal block'>
+                                <span className=' flex items-center gap-2 max-sm:justify-center'>
                                     <Sync />
                                     Order again
                                 </span>
                             </Link>
                         </button>
-                        <button className='border border-gray border-opacity-15 p-1 rounded-md'>
-                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary'>
+                        <button className='border border-gray border-opacity-15 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary block'>
                                 <span>Order details</span>
                             </Link>
                         </button>
@@ -329,18 +329,18 @@ const MyOrder = () => {
                 </div>
                 <hr className=' border-gray border-opacity-30' />
                 <div className=' mt-5'>
-                    <div className=' flex justify-between items-center gap-4 pb-5'>
-                        <span className=' inline-flex gap-2 items-center font-normal text-primary'>
+                    <div className=' flex justify-between items-center max-sm:flex-col max-sm:items-start gap-4 pb-5'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-primary text-lg max-md:text-sm max-sm:text-xl'>
                             Order date:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'>16 july 2024</span>
+                            <span className=' text-gray text-opacity-60 font-normal'>16 july 2024</span>
                         </span>
-                        <span className=' inline-flex gap-2 items-center font-normal'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Email:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'> yourmail@gmsil.com</span>
+                            <span className=' text-gray text-opacity-60 font-normal'> yourmail@gmsil.com</span>
                         </span>
-                        <span className='inline-flex items-center gap-2 font-normal'>
+                        <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
-                            <span className=' text-gray text-opacity-60 font-normal'>
+                            <span className=' text-gray text-opacity-60 font-normal inline-flex gap-1 items-center'>
                                  <CreditCard />
                                  Credit card
                             </span>
@@ -354,7 +354,7 @@ const MyOrder = () => {
             </div>
             <div className=' bg-gray bg-opacity-20 text-primary border border-gray border-opacity-15 rounded-md mt-5 p-4'>
                 <div className=''>
-                    <div className=' flex justify-between items-center pb-4'>
+                    <div className=' flex justify-between items-center flex-wrap max-sm:gap-2 pb-4'>
                         <div className=' flex gap-2 items-center'>
                             <span className=' text-xl font-light text-gray text-opacity-60'>Order ID:
                                 <span className=' text-primary text-lg font-normal'> #BCUBYBCS</span>
@@ -371,17 +371,17 @@ const MyOrder = () => {
                             </button>
                         </div>
                     </div>
-                    <div className=' flex items-center gap-4 mb-5'>
-                        <button className='bg-lightteal bg-opacity-40 p-1 rounded-md'>
-                            <Link className=' font-normal'>
-                                <span>
+                    <div className=' flex items-center max-sm:flex-col gap-4 mb-5'>
+                        <button className='bg-lightteal bg-opacity-40 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal block'>
+                                <span className=' flex items-center max-sm:justify-center gap-2'>
                                     <Sync />
                                     Order again
                                 </span>
                             </Link>
                         </button>
-                        <button className='border border-gray border-opacity-15 p-1 rounded-md'>
-                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary'>
+                        <button className='border border-gray border-opacity-15 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' block font-normal text-gray text-opacity-60 hover:text-primary'>
                                 <span>Order details</span>
                             </Link>
                         </button>
@@ -389,16 +389,16 @@ const MyOrder = () => {
                 </div>
                 <hr className=' border-gray border-opacity-30' />
                 <div className=' mt-5'>
-                    <div className=' flex justify-between items-center gap-4 pb-5'>
-                        <span className=' inline-flex gap-2 items-center font-normal text-primary'>
+                    <div className=' flex justify-between items-center max-sm:flex-col max-sm:items-start gap-4 pb-5'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-primary text-lg max-md:text-sm max-sm:text-xl'>
                             Order date:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'>16 july 2024</span>
+                            <span className=' text-gray text-opacity-60 font-normal'>16 july 2024</span>
                         </span>
-                        <span className=' inline-flex gap-2 items-center font-normal'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Email:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'> yourmail@gmsil.com</span>
+                            <span className=' text-gray text-opacity-60 font-normal'> yourmail@gmsil.com</span>
                         </span>
-                        <span className='inline-flex items-center gap-2 font-normal'>
+                        <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
                             <span className=' text-gray text-opacity-60 font-normal'>
                                  <CreditCard />
@@ -414,7 +414,7 @@ const MyOrder = () => {
             </div>
             <div className=' bg-gray bg-opacity-20 text-primary border border-gray border-opacity-15 rounded-md mt-5 p-4'>
                 <div className=''>
-                    <div className=' flex justify-between items-center pb-4'>
+                    <div className=' flex justify-between items-center flex-wrap max-sm:gap-2 pb-4'>
                         <div className=' flex gap-2 items-center'>
                             <span className=' text-xl font-light text-gray text-opacity-60'>Order ID:
                                 <span className=' text-primary text-lg font-normal'> #BCUBYBCS</span>
@@ -431,17 +431,17 @@ const MyOrder = () => {
                             </button>
                         </div>
                     </div>
-                    <div className=' flex items-center gap-4 mb-5'>
-                        <button className='bg-lightteal bg-opacity-40 p-1 rounded-md'>
-                            <Link className=' font-normal'>
-                                <span>
+                    <div className=' flex items-center max-sm:flex-col gap-4 mb-5'>
+                        <button className='bg-lightteal bg-opacity-40 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal block'>
+                                <span className='flex items-center max-sm:justify-center gap-2'>
                                     <Sync />
                                     Order again
                                 </span>
                             </Link>
                         </button>
-                        <button className='border border-gray border-opacity-15 p-1 rounded-md'>
-                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary'>
+                        <button className='border border-gray border-opacity-15 p-1 rounded-md max-sm:w-full'>
+                            <Link className=' font-normal text-gray text-opacity-60 hover:text-primary block'>
                                 <span>Order details</span>
                             </Link>
                         </button>
@@ -449,16 +449,16 @@ const MyOrder = () => {
                 </div>
                 <hr className=' border-gray border-opacity-30' />
                 <div className=' mt-5'>
-                    <div className=' flex justify-between items-center gap-4 pb-5'>
-                        <span className=' inline-flex gap-2 items-center font-normal text-primary'>
+                    <div className=' flex justify-between items-center max-sm:flex-col max-sm:items-start gap-4 pb-5'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-primary text-lg max-md:text-sm max-sm:text-xl'>
                             Order date:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'>16 july 2024</span>
+                            <span className=' text-gray text-opacity-60 font-normal'>16 july 2024</span>
                         </span>
-                        <span className=' inline-flex gap-2 items-center font-normal'>
+                        <span className=' inline-flex gap-2 items-center font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Email:
-                            <span className=' text-gray text-opacity-60 font-normal text-lg'> yourmail@gmsil.com</span>
+                            <span className=' text-gray text-opacity-60 font-normal'> yourmail@gmsil.com</span>
                         </span>
-                        <span className='inline-flex items-center gap-2 font-normal'>
+                        <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
                             <span className=' text-gray text-opacity-60 font-normal'>
                                  <CreditCard />
