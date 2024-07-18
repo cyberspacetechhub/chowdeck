@@ -1,4 +1,4 @@
-import { AccountBalanceWallet, ChevronRight, Clear, CreditCard, Done, ExpandCircleDownOutlined, ExpandLess, ExpandMore, FavoriteBorder, FileDownload, FileDownloadOutlined, FilterAlt, FilterAltOutlined, Home, HomeOutlined, LocalShipping, LogoutOutlined, ManageAccounts, Receipt, Redeem, SearchOutlined, Settings, SettingsOutlined, Star, StarOutline, Sync, UnfoldLess, UnfoldMore, Visibility, VisibilityOutlined } from '@mui/icons-material'
+import { AccountBalanceWallet, Add, ChevronLeft, ChevronLeftOutlined, ChevronRight, ChevronRightOutlined, Clear, CreditCard, Done, ExpandCircleDownOutlined, ExpandLess, ExpandMore, FavoriteBorder, FileDownload, FileDownloadOutlined, FilterAlt, FilterAltOutlined, Home, HomeOutlined, LocalShipping, LogoutOutlined, ManageAccounts, Receipt, Redeem, Remove, SearchOutlined, Settings, SettingsOutlined, Star, StarOutline, Sync, UnfoldLess, UnfoldMore, Visibility, VisibilityOutlined } from '@mui/icons-material'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Trackorder from '../assets/imgs/trackorder.svg'
@@ -472,6 +472,31 @@ const MyOrder = () => {
                     </p>
                 </div>
             </div>
+            <nav className=' mt-5 mb-10 flex justify-center'>
+                <ul className=' flex items-center max-w-1/3 border border-gray border-opacity-15 rounded-md p-0 text-primary bg-gray bg-opacity-20'>
+                    <li className=''>
+                        <Link className=' border-r border-gray border-opacity-15 hover:bg-gray hover:bg-opacity-15 block px-3 rounded-l-md'><span><ChevronLeft /></span></Link>
+                    </li>
+                    <li className=''>
+                        <Link className='border-r border-gray border-opacity-15 hover:bg-gray hover:bg-opacity-15 block px-3'>1</Link>
+                    </li>
+                    <li>
+                        <Link className=' border-r border-gray border-opacity-15 hover:bg-gray hover:bg-opacity-15 block px-3'>2</Link>
+                    </li>
+                    <li>
+                        <Link className=' border-r border-gray border-opacity-15 hover:bg-gray hover:bg-opacity-15 block px-3'>3</Link>
+                    </li>
+                    <li>
+                        <Link className=' border-r border-gray border-opacity-15 hover:bg-gray hover:bg-opacity-15 block px-3'>...</Link>
+                    </li>
+                    <li>
+                        <Link className=' border-r border-gray border-opacity-15 hover:bg-gray hover:bg-opacity-15 block px-3'>100</Link>
+                    </li>
+                    <li>
+                        <Link className=' px-3 hover:bg-gray hover:bg-opacity-15 block rounded-r-md'><span><ChevronRight /></span></Link>
+                    </li>
+                </ul>
+            </nav>
         </section>
       </main>
     </div>
