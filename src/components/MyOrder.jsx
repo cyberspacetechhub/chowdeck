@@ -32,7 +32,7 @@ const MyOrder = () => {
       </header>
       <h1 className=' mb-5 text-2xl font-medium text-primary'>My Orders</h1>
       <main className=' flex gap-8'>
-        <nav className=' sidenav left-0 h-screen bg-gray bg-opacity-10 px-4 border border-graybg border-opacity-15 rounded-md max-lg:hidden'>
+        <aside className='aside left-0 h-screen bg-gray bg-opacity-10 px-4 border border-graybg border-opacity-15 rounded-md max-lg:hidden'>
             <div className=' py-4 pb-2'>
                 <Link className=' flex justify-between gap-4 items-center rounded-md hover:bg-gray hover:bg-opacity-10 text-primary py-1 px-2'>
                     <div className=' flex items-center gap-4'>
@@ -124,7 +124,7 @@ const MyOrder = () => {
                 </li>
             </ul>
         </div>
-        </nav>
+        </aside>
         <section className='right-section right-0 top-0 max-lg:w-full'>
             <div className=' flex justify-between max-lg:flex-col gap-4'>
                 <div className=' w-1/2 max-lg:w-full relative'>
@@ -213,7 +213,7 @@ const MyOrder = () => {
                         </span>
                         <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
-                            <span className=' text-gray text-opacity-60 font-normal'>
+                            <span className=' text-gray text-opacity-60 font-normal inline-flex gap-1 items-center'>
                                  <CreditCard />
                                  Credit card
                             </span>
@@ -280,7 +280,7 @@ const MyOrder = () => {
                         </span>
                         <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
-                            <span className=' text-gray text-opacity-60 font-normal'>
+                            <span className=' text-gray text-opacity-60 font-normal inline-flex gap-1 items-center'>
                                  <CreditCard />
                                  Credit card
                             </span>
@@ -400,7 +400,7 @@ const MyOrder = () => {
                         </span>
                         <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
-                            <span className=' text-gray text-opacity-60 font-normal'>
+                            <span className=' text-gray text-opacity-60 font-normal inline-flex gap-1 items-center'>
                                  <CreditCard />
                                  Credit card
                             </span>
@@ -460,7 +460,7 @@ const MyOrder = () => {
                         </span>
                         <span className='inline-flex items-center gap-2 font-normal text-lg max-md:text-sm max-sm:text-xl'>
                             Payment Method: 
-                            <span className=' text-gray text-opacity-60 font-normal'>
+                            <span className=' text-gray text-opacity-60 font-normal inline-flex gap-1 items-center'>
                                  <CreditCard />
                                  Credit card
                             </span>
