@@ -19,6 +19,9 @@ const Nav = () => {
         <div className=' flex items-center gap-4'>
             <ul className=' flex items-center list-none gap-4 max-lg:hidden'>
                 <li>
+                    <Link to='/relay' className=' bg-primary px-10 py-3 rounded-full font-medium shadow-lg'>Relay</Link>
+                </li>
+                <li>
                     <Link className=' bg-primary px-10 py-3 rounded-full font-medium shadow-lg'>About</Link>
                 </li>
                 <li>

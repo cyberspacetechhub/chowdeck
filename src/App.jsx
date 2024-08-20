@@ -8,6 +8,8 @@ import Restaurant from './components/Restaurant'
 import Article from './components/Article'
 import Content from './components/Content'
 import MyOrder from './components/MyOrder'
+import Relay from './components/Relay'
+
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}>
         <Route index element={<Content />} />
+        <Route path='/relay' element={<Relay />} />
         </Route>
         <Route path='/store' element={<Article />} >
           <Route index element={<Store />} />
